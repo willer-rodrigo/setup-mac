@@ -45,6 +45,11 @@ alias personal="cat ~/.ssh/config-personal > ~/.ssh/config && cat ~/.gitconfig-p
 # Remove warnings on your terminal.app
 compaudit | xargs chmod g-w,o-w
 
+touch ~/.ssh/config-work
+touch ~/.ssh/config-personal
+touch ~/.ssh/gitconfig-personal
+touch ~/.ssh/gitconfig-work
+
 # Git Multiple SSH Config
 echo '
 # Work GitHub account
@@ -90,4 +95,5 @@ YELLOW='\033[1;33m'
 RED='\033[0;31m'
 echo "\n\n${GREEN}Setup finished!"
 echo "🚨🚨🚨 ${RED}DONT FORGET ${GREEN}to set your ssh name and email in ${RED}~/.gitconfig-personal ${GREEN}and ${RED}~/.gitconfig-work ${GREEN}files!"
-echo "${YELLOW}HAVE A NICE DAY, ${GREEN}CODING! 💻\n\n"
+echo "⚠️⚠️⚠️ ${RED}DONT FORGET ${GREEN}to add your ssh new keys with ${RED}ssh-add -K ~/.ssh/builders ${GREEN}and ${RED}ssh-add -K ~/.ssh/id_rsa ${GREEN}commands!"
+echo "${YELLOW}HAVE A NICE DAY, ${GREEN}CODING! ❤️💻\n\n"
