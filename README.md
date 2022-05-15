@@ -8,14 +8,16 @@ $ sh install.sh
 
 ## Includes
 
+- Homebrew
 - Postman
+- Notion
+- Slack
 - Visual Studio Code
-- Android Studio + OpenJDK
+- Android Studio + OpenJDK (zulu11)
 - Node + Yarn
 - Cocoapods
-- Fastlane
-- Firebase CLI
 - OhMyZsh
+- Zinit plugins
+- Git alias
 - Watchman [RN]
-- Imagemagick [RN]
 - Reactotron [RN]
